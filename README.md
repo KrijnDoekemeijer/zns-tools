@@ -9,24 +9,6 @@ F2FS file system, Linux kernel, and the ZNS device.
 Below we illustrate an example timeline that the tools can generate to visualize events across the Linux storage stack.
 ![zns.apptrace](zns.apptrace/data-db_bench/example-timeline.jpeg)
 
-## What's New
-
-- Introduce [`zns.apptrace`](zns.apptrace) to generate full timeline visualization of the different storage layers by inserting probes into the various Linux storage stack layers, allowing to visualize how user-space operations generate requests throughout the storage stack.
-- Improve the performance of the tools by reducing time complexity to O(n), with decreased memory consumption.
-- Increase file system support to `Btrfs` and `F2FS`.
-- Expand LBAF support to 512B and 4KiB for the tools.
-- Stable Release V1.0.0
-
-## Resources
-
-See the below papers for publications of this work, further reading from us on understanding the ecosystem around ZNS and Flash SSDs.
-
-- **Understanding (Un)Written Contracts of NVMe ZNS Devices with zns-tools** Nick Tehrany, Krijn Doekemeijer, and Animesh Trivedi, https://arxiv.org/abs/2307.11860, (2023). [PDF](https://arxiv.org/pdf/2307.11860.pdf)
-- **Performance Characterization of NVMe Flash Devices with Zoned Namespaces (ZNS)** Krijn Doekemeijer, Nick Tehrany, Balakrishnan Chandrasekaran, Matias Bjørling, and Animesh Trivedi, https://arxiv.org/abs/2206.01547, (2023). [PDF](https://atlarge-research.com/pdfs/2023-cluster-zns-performance-kdoekemeijer.pdf)
-- **Understanding NVMe Zoned Namespace (ZNS) Flash SSD Storage Devices** Nick Tehrany and Animesh Trivedi, https://arxiv.org/abs/2206.01547, (2022). [PDF](https://arxiv.org/pdf/2206.01547.pdf)
-- **A Survey on the Integration of NAND Flash Storage in the Design of File Systems and the Host Storage Software Stack** Nick Tehrany, Krijn Doekemeijer, and Animesh Trivedi, https://arxiv.org/pdf/2307.11866, (2023). [PDF](https://arxiv.org/pdf/2307.11866.pdf)
-- **msF2FS: Design and Implementation of an NVMe ZNS SSD Optimized F2FS File System** Nick Tehrany, https://repository.tudelft.nl/islandora/object/uuid:3c2b3e73-6aff-45f3-af43-31a50314b547, MSc. Thesis, (2023). [PDF](https://repository.tudelft.nl/islandora/object/uuid:3c2b3e73-6aff-45f3-af43-31a50314b547/datastream/OBJ/download)
-
 ## Requirements
 
 - [json-c](https://github.com/json-c/json-c)
